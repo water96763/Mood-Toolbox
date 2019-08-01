@@ -6,9 +6,10 @@
   <title>Mood Tool Kit</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha256-etrwgFLGpqD4oNAFW08ZH9Bzif5ByXK2lXNHKy7LQGo=" crossorigin="anonymous" />
 <style>
 button {
-  background: white;
+  background: transparent;
   border: 1px solid white;
 }
 
@@ -22,7 +23,8 @@ button {
 <br>
 <br>
 
-  <div><!-- place for emojies-->
+<!-- place for emojies-->
+  <div class="emojies" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
   <button id = "silly" style="font-size:100px">&#128540;</button>
   <button id = "happy" style="font-size:100px">&#128513;</button>
   <button id = "laughing" style="font-size:100px">&#128514;</button>
@@ -44,8 +46,6 @@ button {
   <button id = "celebrating" style="font-size:100px">&#129395;</button>
   <button id = "vocano" style="font-size:100px">&#127755;</button>
 
-
-  
 </div> <!-- to close emojies div-->
 
 </div> <!-- to close container-->
@@ -56,28 +56,9 @@ button {
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<script>
-
-
-
-
-var emoji = document.getElementByID("silly")
-emoji.onclick = function(){
-
-
-
-
-};
-
-
-
-
-</script>
-
-
-
-
-
+<script type="text/javascript" src="assets/mtb.js"></script>
+<!-- Add slick.js before your closing <body> tag, after jQuery (requires jQuery 1.7 +)-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" integrity="sha256-zUQGihTEkA4nkrgfbbAM1f3pxvnWiznBND+TuJoUv3M=" crossorigin="anonymous"></script>
 </body>
 
 </html>
