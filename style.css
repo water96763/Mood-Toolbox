@@ -3,10 +3,18 @@ body {
     margin: 0;
     padding: 0;
 }
+#masthead {
+
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 2px solid #cccccc;
+    overflow: auto;
+    margin: 0 0 30px;
+}
 
 body {
     background-image: url("assets/images/melting-colors-wallpaper.jpg");
-    background-position: center; 
+    background-position: relative; 
     background-repeat: no-repeat;
     background-size: cover;
 }
