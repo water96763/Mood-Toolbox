@@ -13,7 +13,7 @@ body {
 }
 
 body {
-    background-image: url("assets/images/melting-colors-wallpaper.jpg");
+    background-image: url("assets/css/assets/images/wallpaper.jpg");
     background-position: relative; 
     background-repeat: no-repeat;
     background-size: cover;
@@ -65,3 +65,4 @@ button {
     background-color:transparent;
     border: transparent;
 }
+
