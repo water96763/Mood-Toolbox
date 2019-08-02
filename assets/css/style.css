@@ -66,3 +66,21 @@ button {
     border: transparent;
 }
 
+.gif {
+    border-width: thick;
+    margin: 20px;
+}
+
+.container > div {
+    display: inline-block;
+}
+#buttonDiv {
+    text-align: center;
+}
+#reset {
+    font-size: 50px;
+    background-color: green;
+    position: absolute;
+
+
+}
