@@ -1,0 +1,59 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("assets/images/melting-colors-wallpaper.jpg");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1, .head {
+    text-align: center;
+    padding:5px;
+    margin:10px;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.slider {
+    width: 75%;
+    margin: 200px auto;
+}
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: 1;
+}
+
+.slick-active {
+    opacity: 1;
+}
+
+.slick-current {
+    opacity: 1;
+}
+
+button {
+    background-color:transparent;
+    border: transparent;
+}
