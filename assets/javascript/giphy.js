@@ -1,9 +1,12 @@
 /////// 1
+document.getElementById("reset").style.display = "none";
 
 function giphyFunction() {
 
-    event.preventDefault();     
-
+    event.preventDefault(); 
+    document.getElementById("reset").style.display = "block";
+    document.getElementById('emojies').style.display = 'none';    
+      $("#divForGif").empty();
       var giphy = $("#silly").val().trim();
       
       console.log(giphy);
@@ -24,11 +27,17 @@ function giphyFunction() {
           var gifDiv = $("<div>");
           
           var gifImage = $("<img>");
-          gifImage.addClass('gif');
+          gifImage.attr({
+            "src": results[i].images.fixed_height.url,
+            "data-animate": results[i].images.fixed_height.url,
+            "data-still": results[i].images.fixed_height_still.url,
+            "data-state": "animate",
+            "class": "gif"
+          });
 
-          gifImage.attr("src", results[i].images.original.url);
+        
 
-          gifDiv.append();
+          // gifDiv.append();
           gifDiv.append(gifImage);
           $("#divForGif").prepend(gifDiv);
 
@@ -48,8 +57,10 @@ function giphyFunction() {
 
   function giphyFunction2() {
 
-    event.preventDefault();     
-
+    event.preventDefault();
+    document.getElementById('emojies').style.display = 'none';
+    document.getElementById("reset").style.display = "block";      
+    $("#divForGif").empty();
       var giphy = $("#happy").val().trim();
       
       console.log(giphy);
@@ -70,9 +81,13 @@ function giphyFunction() {
           var gifDiv = $("<div>");
           
           var gifImage = $("<img>");
-          gifImage.addClass('gif');
-
-          gifImage.attr("src", results[i].images.original.url);
+          gifImage.attr({
+            "src": results[i].images.fixed_height.url,
+            "data-animate": results[i].images.fixed_height.url,
+            "data-still": results[i].images.fixed_height_still.url,
+            "data-state": "animate",
+            "class": "gif"
+          });
 
           gifDiv.append();
           gifDiv.append(gifImage);
@@ -96,8 +111,10 @@ function giphyFunction() {
 
   function giphyFunction3() {
 
-    event.preventDefault();     
-
+    event.preventDefault();
+    document.getElementById('emojies').style.display = 'none';
+    document.getElementById("reset").style.display = "block";      
+    $("#divForGif").empty();
       var giphy = $("#laughing").val().trim();
       
       console.log(giphy);
@@ -118,9 +135,13 @@ function giphyFunction() {
           var gifDiv = $("<div>");
           
           var gifImage = $("<img>");
-          gifImage.addClass('gif');
-
-          gifImage.attr("src", results[i].images.original.url);
+          gifImage.attr({
+            "src": results[i].images.fixed_height.url,
+            "data-animate": results[i].images.fixed_height.url,
+            "data-still": results[i].images.fixed_height_still.url,
+            "data-state": "animate",
+            "class": "gif"
+          });
 
           gifDiv.append();
           gifDiv.append(gifImage);
@@ -144,7 +165,9 @@ function giphyFunction() {
  function giphyFunction4() {
 
   event.preventDefault();     
-
+  $("#divForGif").empty();
+  document.getElementById('emojies').style.display = 'none';
+  document.getElementById("reset").style.display = "block"; 
     var giphy = $("#cool").val().trim();
     
     console.log(giphy);
@@ -165,9 +188,13 @@ function giphyFunction() {
         var gifDiv = $("<div>");
         
         var gifImage = $("<img>");
-        gifImage.addClass('gif');
-
-        gifImage.attr("src", results[i].images.original.url);
+        gifImage.attr({
+          "src": results[i].images.fixed_height.url,
+          "data-animate": results[i].images.fixed_height.url,
+          "data-still": results[i].images.fixed_height_still.url,
+          "data-state": "animate",
+          "class": "gif"
+        });
 
         gifDiv.append();
         gifDiv.append(gifImage);
@@ -188,8 +215,10 @@ $("#cool").on("click", giphyFunction4)
 
  function giphyFunction5() {
 
-    event.preventDefault();     
-
+    event.preventDefault(); 
+    document.getElementById("reset").style.display = "block";
+    document.getElementById('emojies').style.display = 'none';     
+    $("#divForGif").empty();
       var giphy = $("#stressed").val().trim();
       
       console.log(giphy);
@@ -210,9 +239,13 @@ $("#cool").on("click", giphyFunction4)
           var gifDiv = $("<div>");
           
           var gifImage = $("<img>");
-          gifImage.addClass('gif');
-
-          gifImage.attr("src", results[i].images.original.url);
+          gifImage.attr({
+            "src": results[i].images.fixed_height.url,
+            "data-animate": results[i].images.fixed_height.url,
+            "data-still": results[i].images.fixed_height_still.url,
+            "data-state": "animate",
+            "class": "gif"
+          });
 
           gifDiv.append();
           gifDiv.append(gifImage);
@@ -233,8 +266,10 @@ $("#cool").on("click", giphyFunction4)
 
 function giphyFunction6() {
 
-  event.preventDefault();     
-
+  event.preventDefault(); 
+  document.getElementById('emojies').style.display = 'none';
+  document.getElementById("reset").style.display = "block";     
+  $("#divForGif").empty();
     var giphy = $("#sad").val().trim();
     
     console.log(giphy);
@@ -255,9 +290,13 @@ function giphyFunction6() {
         var gifDiv = $("<div>");
         
         var gifImage = $("<img>");
-        gifImage.addClass('gif');
-
-        gifImage.attr("src", results[i].images.original.url);
+        gifImage.attr({
+          "src": results[i].images.fixed_height.url,
+          "data-animate": results[i].images.fixed_height.url,
+          "data-still": results[i].images.fixed_height_still.url,
+          "data-state": "animate",
+          "class": "gif"
+        });
 
         gifDiv.append();
         gifDiv.append(gifImage);
@@ -279,8 +318,10 @@ $("#sad").on("click", giphyFunction6)
 
 function giphyFunction7() {
 
-  event.preventDefault();     
-
+  event.preventDefault();
+  document.getElementById('emojies').style.display = 'none';
+  document.getElementById("reset").style.display = "block";      
+  $("#divForGif").empty();
     var giphy = $("#mad").val().trim();
     
     console.log(giphy);
@@ -301,9 +342,13 @@ function giphyFunction7() {
         var gifDiv = $("<div>");
         
         var gifImage = $("<img>");
-        gifImage.addClass('gif');
-
-        gifImage.attr("src", results[i].images.original.url);
+        gifImage.attr({
+          "src": results[i].images.fixed_height.url,
+          "data-animate": results[i].images.fixed_height.url,
+          "data-still": results[i].images.fixed_height_still.url,
+          "data-state": "animate",
+          "class": "gif"
+        });
 
         gifDiv.append();
         gifDiv.append(gifImage);
@@ -325,8 +370,10 @@ $("#mad").on("click", giphyFunction7)
 
 function giphyFunction8() {
 
-  event.preventDefault();     
-
+  event.preventDefault(); 
+  document.getElementById('emojies').style.display = 'none';
+  document.getElementById("reset").style.display = "block";     
+  $("#divForGif").empty();
     var giphy = $("#crying").val().trim();
     
     console.log(giphy);
@@ -347,9 +394,13 @@ function giphyFunction8() {
         var gifDiv = $("<div>");
         
         var gifImage = $("<img>");
-        gifImage.addClass('gif');
-
-        gifImage.attr("src", results[i].images.original.url);
+        gifImage.attr({
+          "src": results[i].images.fixed_height.url,
+          "data-animate": results[i].images.fixed_height.url,
+          "data-still": results[i].images.fixed_height_still.url,
+          "data-state": "animate",
+          "class": "gif"
+        });
 
         gifDiv.append();
         gifDiv.append(gifImage);
@@ -371,8 +422,10 @@ $("#crying").on("click", giphyFunction8)
 
 function giphyFunction9() {
 
-  event.preventDefault();     
-
+  event.preventDefault(); 
+  document.getElementById('emojies').style.display = 'none'; 
+  document.getElementById("reset").style.display = "block";    
+  $("#divForGif").empty();
     var giphy = $("#sleepy").val().trim();
     
     console.log(giphy);
@@ -393,9 +446,13 @@ function giphyFunction9() {
         var gifDiv = $("<div>");
         
         var gifImage = $("<img>");
-        gifImage.addClass('gif');
-
-        gifImage.attr("src", results[i].images.original.url);
+        gifImage.attr({
+          "src": results[i].images.fixed_height.url,
+          "data-animate": results[i].images.fixed_height.url,
+          "data-still": results[i].images.fixed_height_still.url,
+          "data-state": "animate",
+          "class": "gif"
+        }); 
 
         gifDiv.append();
         gifDiv.append(gifImage);
@@ -418,8 +475,11 @@ $("#sleepy").on("click", giphyFunction9)
 
 function giphyFunction10() {
 
-  event.preventDefault();     
+  event.preventDefault();
+  document.getElementById('emojies').style.display = 'none'; 
+   document.getElementById("reset").style.display = "block";
 
+  $("#divForGif").empty();
     var giphy = $("#sick").val().trim();
     
     console.log(giphy);
@@ -440,9 +500,13 @@ function giphyFunction10() {
         var gifDiv = $("<div>");
         
         var gifImage = $("<img>");
-        gifImage.addClass('gif');
-
-        gifImage.attr("src", results[i].images.original.url);
+        gifImage.attr({
+          "src": results[i].images.fixed_height.url,
+          "data-animate": results[i].images.fixed_height.url,
+          "data-still": results[i].images.fixed_height_still.url,
+          "data-state": "animate",
+          "class": "gif"
+        });
 
         gifDiv.append();
         gifDiv.append(gifImage);
@@ -465,8 +529,10 @@ $("#sick").on("click", giphyFunction10)
 
 function giphyFunction11() {
 
-  event.preventDefault();     
-
+  event.preventDefault(); 
+  document.getElementById('emojies').style.display = 'none';
+  document.getElementById("reset").style.display = "block";     
+  $("#divForGif").empty();
     var giphy = $("#fuck").val().trim();
     
     console.log(giphy);
@@ -487,9 +553,13 @@ function giphyFunction11() {
         var gifDiv = $("<div>");
         
         var gifImage = $("<img>");
-        gifImage.addClass('gif');
-
-        gifImage.attr("src", results[i].images.original.url);
+        gifImage.attr({
+          "src": results[i].images.fixed_height.url,
+          "data-animate": results[i].images.fixed_height.url,
+          "data-still": results[i].images.fixed_height_still.url,
+          "data-state": "animate",
+          "class": "gif"
+        });
 
         gifDiv.append();
         gifDiv.append(gifImage);
@@ -513,8 +583,10 @@ $("#fuck").on("click", giphyFunction11)
 
 function giphyFunction12() {
 
-  event.preventDefault();     
-
+  event.preventDefault();
+  document.getElementById('emojies').style.display = 'none'; 
+  document.getElementById("reset").style.display = "block";     
+  $("#divForGif").empty();
     var giphy = $("#swearing").val().trim();
     
     console.log(giphy);
@@ -535,9 +607,13 @@ function giphyFunction12() {
         var gifDiv = $("<div>");
         
         var gifImage = $("<img>");
-        gifImage.addClass('gif');
-
-        gifImage.attr("src", results[i].images.original.url);
+        gifImage.attr({
+          "src": results[i].images.fixed_height.url,
+          "data-animate": results[i].images.fixed_height.url,
+          "data-still": results[i].images.fixed_height_still.url,
+          "data-state": "animate",
+          "class": "gif"
+        });
 
         gifDiv.append();
         gifDiv.append(gifImage);
@@ -562,9 +638,10 @@ $("#swearing").on("click", giphyFunction12)
 function giphyFunction13() {
 
   event.preventDefault();     
-
+  document.getElementById('emojies').style.display = 'none';
+  document.getElementById("reset").style.display = "block"; 
     var giphy = $("#mindBlown").val().trim();
-    
+    $("#divForGif").empty();
     console.log(giphy);
 
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
@@ -583,9 +660,13 @@ function giphyFunction13() {
         var gifDiv = $("<div>");
         
         var gifImage = $("<img>");
-        gifImage.addClass('gif');
-
-        gifImage.attr("src", results[i].images.original.url);
+        gifImage.attr({
+          "src": results[i].images.fixed_height.url,
+          "data-animate": results[i].images.fixed_height.url,
+          "data-still": results[i].images.fixed_height_still.url,
+          "data-state": "animate",
+          "class": "gif"
+        });
 
         gifDiv.append();
         gifDiv.append(gifImage);
@@ -608,8 +689,10 @@ $("#mindBlown").on("click", giphyFunction13)
 
 function giphyFunction14() {
 
-  event.preventDefault();     
-
+  event.preventDefault();
+  document.getElementById('emojies').style.display = 'none';
+  document.getElementById("reset").style.display = "block";      
+  $("#divForGif").empty();
     var giphy = $("#poop").val().trim();
     
     console.log(giphy);
@@ -630,9 +713,13 @@ function giphyFunction14() {
         var gifDiv = $("<div>");
         
         var gifImage = $("<img>");
-        gifImage.addClass('gif');
-
-        gifImage.attr("src", results[i].images.original.url);
+        gifImage.attr({
+          "src": results[i].images.fixed_height.url,
+          "data-animate": results[i].images.fixed_height.url,
+          "data-still": results[i].images.fixed_height_still.url,
+          "data-state": "animate",
+          "class": "gif"
+        });
 
         gifDiv.append();
         gifDiv.append(gifImage);
@@ -656,8 +743,10 @@ $("#poop").on("click", giphyFunction14)
 
 function giphyFunction15() {
 
-  event.preventDefault();     
-
+  event.preventDefault(); 
+  document.getElementById('emojies').style.display = 'none';
+  document.getElementById("reset").style.display = "block";     
+  $("#divForGif").empty();
     var giphy = $("#love").val().trim();
     
     console.log(giphy);
@@ -678,9 +767,13 @@ function giphyFunction15() {
         var gifDiv = $("<div>");
         
         var gifImage = $("<img>");
-        gifImage.addClass('gif');
-
-        gifImage.attr("src", results[i].images.original.url);
+        gifImage.attr({
+          "src": results[i].images.fixed_height.url,
+          "data-animate": results[i].images.fixed_height.url,
+          "data-still": results[i].images.fixed_height_still.url,
+          "data-state": "animate",
+          "class": "gif"
+        });
 
         gifDiv.append();
         gifDiv.append(gifImage);
@@ -703,8 +796,10 @@ $("#love").on("click", giphyFunction15)
 
 function giphyFunction16() {
 
-  event.preventDefault();     
-
+  event.preventDefault();  
+  document.getElementById('emojies').style.display = 'none';
+  document.getElementById("reset").style.display = "block";    
+  $("#divForGif").empty();
     var giphy = $("#peaceful").val().trim();
     
     console.log(giphy);
@@ -725,9 +820,13 @@ function giphyFunction16() {
         var gifDiv = $("<div>");
         
         var gifImage = $("<img>");
-        gifImage.addClass('gif');
-
-        gifImage.attr("src", results[i].images.original.url);
+        gifImage.attr({
+          "src": results[i].images.fixed_height.url,
+          "data-animate": results[i].images.fixed_height.url,
+          "data-still": results[i].images.fixed_height_still.url,
+          "data-state": "animate",
+          "class": "gif"
+        });
 
         gifDiv.append();
         gifDiv.append(gifImage);
@@ -751,8 +850,10 @@ $("#peaceful").on("click", giphyFunction16)
 
 function giphyFunction17() {
 
-  event.preventDefault();     
-
+  event.preventDefault(); 
+  document.getElementById('emojies').style.display = 'none';
+  document.getElementById("reset").style.display = "block";     
+  $("#divForGif").empty();
     var giphy = $("#celebrating").val().trim();
     
     console.log(giphy);
@@ -773,9 +874,13 @@ function giphyFunction17() {
         var gifDiv = $("<div>");
         
         var gifImage = $("<img>");
-        gifImage.addClass('gif');
-
-        gifImage.attr("src", results[i].images.original.url);
+        gifImage.attr({
+          "src": results[i].images.fixed_height.url,
+          "data-animate": results[i].images.fixed_height.url,
+          "data-still": results[i].images.fixed_height_still.url,
+          "data-state": "animate",
+          "class": "gif"
+        });
 
         gifDiv.append();
         gifDiv.append(gifImage);
@@ -798,9 +903,11 @@ $("#celebrating").on("click", giphyFunction17)
 
 
 function giphyFunction18() {
+  $("#divForGif").empty();
 
-  event.preventDefault();     
-
+  event.preventDefault();
+  document.getElementById('emojies').style.display = 'none'; 
+  document.getElementById("reset").style.display = "block";     
     var giphy = $("#volcano").val().trim();
     
     console.log(giphy);
@@ -821,9 +928,13 @@ function giphyFunction18() {
         var gifDiv = $("<div>");
         
         var gifImage = $("<img>");
-        gifImage.addClass('gif');
-
-        gifImage.attr("src", results[i].images.original.url);
+        gifImage.attr({
+          "src": results[i].images.fixed_height.url,
+          "data-animate": results[i].images.fixed_height.url,
+          "data-still": results[i].images.fixed_height_still.url,
+          "data-state": "animate",
+          "class": "gif"
+        });
 
         gifDiv.append();
         gifDiv.append(gifImage);
@@ -840,5 +951,19 @@ function giphyFunction18() {
 $("#volcano").on("click", giphyFunction18)
 
 
+$(document).on("click", ".gif", function() {
+  var state = $(this).attr("data-state");
+  if (state === "still") {
+    $(this).attr("src", $(this).attr("data-animate"));
+    $(this).attr("data-state", "animate");
+  } else {
+    $(this).attr("src", $(this).attr("data-still"));
+    $(this).attr("data-state", "still");
+  }
+}); 
 
-
+$(document).on("click", "#reset", function() {
+  document.getElementById("reset").style.display = "none";
+    document.getElementById('emojies').style.display = 'block'; 
+    $("#divForGif").empty();
+})
