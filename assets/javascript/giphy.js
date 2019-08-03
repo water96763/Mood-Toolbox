@@ -1,6 +1,39 @@
 /////// 1
 document.getElementById("reset").style.display = "none";
 
+function quoteFunction1() {
+
+  var queryURL = "http://quotes.rest/qod.json?category=inspire&limit=10";
+  console.log(queryURL)
+  
+  $.ajax({
+    url: queryURL,
+    method: "GET"
+  }).then(function (response) {
+    console.log(queryURL);
+    console.log(response.contents.quotes[0].quote);
+
+
+    var quote = response.contents.quotes[0].quote;
+    var author = response.contents.quotes[0].author;
+
+    var results = quote + " - " + author
+   
+      
+      $("#divForGif").prepend(results);
+
+     
+
+
+  }); // to close response funtion
+ 
+
+}// to close quote Function
+
+
+
+
+
 function giphyFunction() {
 
     event.preventDefault(); 
@@ -41,18 +74,47 @@ function giphyFunction() {
           gifDiv.append(gifImage);
           $("#divForGif").prepend(gifDiv);
 
-        } 
+        } // to close the loop 
+        quoteFunction1();
+      }); // to close response funtion  
+  } // to close giphy function
 
-
-      }); // to close response funtion
-     
-    
-  } // to close button function
-
+   
   $("#silly").on("click", giphyFunction) 
 
 
+
 /////////2
+
+function quoteFunction2() {
+
+  var queryURL = "http://quotes.rest/qod.json?category=life";
+  console.log(queryURL)
+  
+  $.ajax({
+    url: queryURL,
+    method: "GET"
+  }).then(function (response) {
+    console.log(queryURL);
+    console.log(response.contents.quotes[0].quote);
+
+
+    var quote = response.contents.quotes[0].quote;
+    var author = response.contents.quotes[0].author;
+
+    var results = quote + " - " + author
+   
+      
+      $("#divForGif").prepend(results);
+
+     
+
+
+  }); // to close response funtion
+ 
+
+}// to close quote Function
+
 
 
   function giphyFunction2() {
@@ -96,8 +158,9 @@ function giphyFunction() {
         } 
 
 
+        quoteFunction2();
+
       }); // to close response funtion
-     
     
   } // to close button function
 
@@ -107,6 +170,35 @@ function giphyFunction() {
     $("#happy").on("click", giphyFunction2) 
 
 //////3
+
+function quoteFunction3() {
+
+  var queryURL = "http://quotes.rest/qod.json?category=funny";
+  console.log(queryURL)
+  
+  $.ajax({
+    url: queryURL,
+    method: "GET"
+  }).then(function (response) {
+    console.log(queryURL);
+    console.log(response.contents.quotes[0].quote);
+
+
+    var quote = response.contents.quotes[0].quote;
+    var author = response.contents.quotes[0].author;
+
+    var results = quote + " - " + author
+   
+      
+      $("#divForGif").prepend(results);
+
+     
+
+
+  }); // to close response funtion
+ 
+
+}// to close quote Function
 
 
   function giphyFunction3() {
@@ -149,7 +241,7 @@ function giphyFunction() {
 
         } 
 
-
+        quoteFunction3();
       }); // to close response funtion
      
     
@@ -161,7 +253,35 @@ function giphyFunction() {
 
   ////4 
 
+  function quoteFunction4() {
 
+    var queryURL = "http://quotes.rest/qod.json?category=art";
+    console.log(queryURL)
+    
+    $.ajax({
+      url: queryURL,
+      method: "GET"
+    }).then(function (response) {
+      console.log(queryURL);
+      console.log(response.contents.quotes[0].quote);
+  
+  
+      var quote = response.contents.quotes[0].quote;
+      var author = response.contents.quotes[0].author;
+  
+      var results = quote + " - " + author
+     
+        
+        $("#divForGif").prepend(results);
+  
+       
+  
+  
+    }); // to close response funtion
+   
+  
+  }// to close quote Function
+  
  function giphyFunction4() {
 
   event.preventDefault();     
@@ -202,7 +322,7 @@ function giphyFunction() {
 
       } 
 
-
+      quoteFunction4();
     }); // to close response funtion
    
   
@@ -211,6 +331,35 @@ function giphyFunction() {
 $("#cool").on("click", giphyFunction4) 
   
 //// 5 
+
+function quoteFunction5() {
+
+  var queryURL = "http://quotes.rest/qod.json?category=life";
+  console.log(queryURL)
+  
+  $.ajax({
+    url: queryURL,
+    method: "GET"
+  }).then(function (response) {
+    console.log(queryURL);
+    console.log(response.contents.quotes[0].quote);
+
+
+    var quote = response.contents.quotes[0].quote;
+    var author = response.contents.quotes[0].author;
+
+    var results = quote + " - " + author
+   
+      
+      $("#divForGif").prepend(results);
+
+     
+
+
+  }); // to close response funtion
+ 
+
+}// to close quote Function
 
 
  function giphyFunction5() {
@@ -252,7 +401,7 @@ $("#cool").on("click", giphyFunction4)
           $("#divForGif").prepend(gifDiv);
 
         } 
-
+        quoteFunction5();
 
       }); // to close response funtion
      
@@ -262,6 +411,36 @@ $("#cool").on("click", giphyFunction4)
   $("#stressed").on("click", giphyFunction5) 
 
   ////6
+
+  function quoteFunction6() {
+
+    var queryURL = "http://quotes.rest/qod.json?category=inspire";
+    console.log(queryURL)
+    
+    $.ajax({
+      url: queryURL,
+      method: "GET"
+    }).then(function (response) {
+      console.log(queryURL);
+      console.log(response.contents.quotes[0].quote);
+  
+  
+      var quote = response.contents.quotes[0].quote;
+      var author = response.contents.quotes[0].author;
+  
+      var results = quote + " - " + author
+     
+        
+        $("#divForGif").prepend(results);
+  
+       
+  
+  
+    }); // to close response funtion
+   
+  
+  }// to close quote Function
+  
 
 
 function giphyFunction6() {
@@ -304,7 +483,7 @@ function giphyFunction6() {
 
       } 
 
-
+      quoteFunction6();
     }); // to close response funtion
    
   
@@ -314,6 +493,34 @@ $("#sad").on("click", giphyFunction6)
 
 ///// 7
 
+function quoteFunction7() {
+
+  var queryURL = "http://quotes.rest/qod.json?category=art";
+  console.log(queryURL)
+  
+  $.ajax({
+    url: queryURL,
+    method: "GET"
+  }).then(function (response) {
+    console.log(queryURL);
+    console.log(response.contents.quotes[0].quote);
+
+
+    var quote = response.contents.quotes[0].quote;
+    var author = response.contents.quotes[0].author;
+
+    var results = quote + " - " + author
+   
+      
+      $("#divForGif").prepend(results);
+
+     
+
+
+  }); // to close response funtion
+ 
+
+}// to close quote Function
 
 
 function giphyFunction7() {
@@ -355,7 +562,7 @@ function giphyFunction7() {
         $("#divForGif").prepend(gifDiv);
 
       } 
-
+      quoteFunction7();
 
     }); // to close response funtion
    
@@ -364,8 +571,37 @@ function giphyFunction7() {
 
 $("#mad").on("click", giphyFunction7) 
 
+
 ////8
 
+function quoteFunction8() {
+
+  var queryURL = "http://quotes.rest/qod.json?category=inspire";
+  console.log(queryURL)
+  
+  $.ajax({
+    url: queryURL,
+    method: "GET"
+  }).then(function (response) {
+    console.log(queryURL);
+    console.log(response.contents.quotes[0].quote);
+
+
+    var quote = response.contents.quotes[0].quote;
+    var author = response.contents.quotes[0].author;
+
+    var results = quote + " - " + author
+   
+      
+      $("#divForGif").prepend(results);
+
+     
+
+
+  }); // to close response funtion
+ 
+
+}// to close quote Function
 
 
 function giphyFunction8() {
@@ -407,7 +643,7 @@ function giphyFunction8() {
         $("#divForGif").prepend(gifDiv);
 
       } 
-
+      quoteFunction8();
 
     }); // to close response funtion
    
@@ -417,6 +653,35 @@ function giphyFunction8() {
 $("#crying").on("click", giphyFunction8)
 
 ////9
+
+function quoteFunction9() {
+
+  var queryURL = "http://quotes.rest/qod.json?category=art";
+  console.log(queryURL)
+  
+  $.ajax({
+    url: queryURL,
+    method: "GET"
+  }).then(function (response) {
+    console.log(queryURL);
+    console.log(response.contents.quotes[0].quote);
+
+
+    var quote = response.contents.quotes[0].quote;
+    var author = response.contents.quotes[0].author;
+
+    var results = quote + " - " + author
+   
+      
+      $("#divForGif").prepend(results);
+
+     
+
+
+  }); // to close response funtion
+ 
+
+}// to close quote Function
 
 
 
@@ -459,7 +724,7 @@ function giphyFunction9() {
         $("#divForGif").prepend(gifDiv);
 
       } 
-
+      quoteFunction9();
 
     }); // to close response funtion
    
@@ -470,6 +735,34 @@ $("#sleepy").on("click", giphyFunction9)
 
 //// 10
 
+function quoteFunction10() {
+
+  var queryURL = "http://quotes.rest/qod.json?category=inspire";
+  console.log(queryURL)
+  
+  $.ajax({
+    url: queryURL,
+    method: "GET"
+  }).then(function (response) {
+    console.log(queryURL);
+    console.log(response.contents.quotes[0].quote);
+
+
+    var quote = response.contents.quotes[0].quote;
+    var author = response.contents.quotes[0].author;
+
+    var results = quote + " - " + author
+   
+      
+      $("#divForGif").prepend(results);
+
+     
+
+
+  }); // to close response funtion
+ 
+
+}// to close quote Function
 
 
 
@@ -514,6 +807,7 @@ function giphyFunction10() {
 
       } 
 
+      quoteFunction10();
 
     }); // to close response funtion
    
@@ -523,6 +817,35 @@ function giphyFunction10() {
 $("#sick").on("click", giphyFunction10)
 
 /// 11
+
+function quoteFunction11() {
+
+  var queryURL = "http://quotes.rest/qod.json?category=funny";
+  console.log(queryURL)
+  
+  $.ajax({
+    url: queryURL,
+    method: "GET"
+  }).then(function (response) {
+    console.log(queryURL);
+    console.log(response.contents.quotes[0].quote);
+
+
+    var quote = response.contents.quotes[0].quote;
+    var author = response.contents.quotes[0].author;
+
+    var results = quote + " - " + author
+   
+      
+      $("#divForGif").prepend(results);
+
+     
+
+
+  }); // to close response funtion
+ 
+
+}// to close quote Function
 
 
 
@@ -568,6 +891,7 @@ function giphyFunction11() {
       } 
 
 
+      quoteFunction11();
     }); // to close response funtion
    
   
@@ -577,6 +901,36 @@ $("#fuck").on("click", giphyFunction11)
 
 
 /// 12
+
+function quoteFunction12() {
+
+  var queryURL = "http://quotes.rest/qod.json?category=life";
+  console.log(queryURL)
+  
+  $.ajax({
+    url: queryURL,
+    method: "GET"
+  }).then(function (response) {
+    console.log(queryURL);
+    console.log(response.contents.quotes[0].quote);
+
+
+    var quote = response.contents.quotes[0].quote;
+    var author = response.contents.quotes[0].author;
+
+    var results = quote + " - " + author
+   
+      
+      $("#divForGif").prepend(results);
+
+     
+
+
+  }); // to close response funtion
+ 
+
+}// to close quote Function
+
 
 
 
@@ -621,6 +975,7 @@ function giphyFunction12() {
 
       } 
 
+      quoteFunction12();
 
     }); // to close response funtion
    
@@ -631,6 +986,35 @@ $("#swearing").on("click", giphyFunction12)
 
 
 //// 13 
+
+function quoteFunction13() {
+
+  var queryURL = "http://quotes.rest/qod.json?category=inspire";
+  console.log(queryURL)
+  
+  $.ajax({
+    url: queryURL,
+    method: "GET"
+  }).then(function (response) {
+    console.log(queryURL);
+    console.log(response.contents.quotes[0].quote);
+
+
+    var quote = response.contents.quotes[0].quote;
+    var author = response.contents.quotes[0].author;
+
+    var results = quote + " - " + author
+   
+      
+      $("#divForGif").prepend(results);
+
+     
+
+
+  }); // to close response funtion
+ 
+
+}// to close quote Function
 
 
 
@@ -673,7 +1057,7 @@ function giphyFunction13() {
         $("#divForGif").prepend(gifDiv);
 
       } 
-
+      quoteFunction13();
 
     }); // to close response funtion
    
@@ -685,6 +1069,34 @@ $("#mindBlown").on("click", giphyFunction13)
 
 //// 14
 
+function quoteFunction14() {
+
+  var queryURL = "http://quotes.rest/qod.json?category=funny";
+  console.log(queryURL)
+  
+  $.ajax({
+    url: queryURL,
+    method: "GET"
+  }).then(function (response) {
+    console.log(queryURL);
+    console.log(response.contents.quotes[0].quote);
+
+
+    var quote = response.contents.quotes[0].quote;
+    var author = response.contents.quotes[0].author;
+
+    var results = quote + " - " + author
+   
+      
+      $("#divForGif").prepend(results);
+
+     
+
+
+  }); // to close response funtion
+ 
+
+}// to close quote Function
 
 
 function giphyFunction14() {
@@ -727,6 +1139,7 @@ function giphyFunction14() {
 
       } 
 
+      quoteFunction14();
 
     }); // to close response funtion
    
@@ -738,6 +1151,34 @@ $("#poop").on("click", giphyFunction14)
 
 /// 15 
 
+function quoteFunction15() {
+
+  var queryURL = "http://quotes.rest/qod.json?category=life";
+  console.log(queryURL)
+  
+  $.ajax({
+    url: queryURL,
+    method: "GET"
+  }).then(function (response) {
+    console.log(queryURL);
+    console.log(response.contents.quotes[0].quote);
+
+
+    var quote = response.contents.quotes[0].quote;
+    var author = response.contents.quotes[0].author;
+
+    var results = quote + " - " + author
+   
+      
+      $("#divForGif").prepend(results);
+
+     
+
+
+  }); // to close response funtion
+ 
+
+}// to close quote Function
 
 
 
@@ -782,6 +1223,7 @@ function giphyFunction15() {
       } 
 
 
+      quoteFunction15();
     }); // to close response funtion
    
   
@@ -791,6 +1233,34 @@ $("#love").on("click", giphyFunction15)
 
 //// 16
 
+function quoteFunction16() {
+
+  var queryURL = "http://quotes.rest/qod.json?category=inspire";
+  console.log(queryURL)
+  
+  $.ajax({
+    url: queryURL,
+    method: "GET"
+  }).then(function (response) {
+    console.log(queryURL);
+    console.log(response.contents.quotes[0].quote);
+
+
+    var quote = response.contents.quotes[0].quote;
+    var author = response.contents.quotes[0].author;
+
+    var results = quote + " - " + author
+   
+      
+      $("#divForGif").prepend(results);
+
+     
+
+
+  }); // to close response funtion
+ 
+
+}// to close quote Function
 
 
 
@@ -834,6 +1304,7 @@ function giphyFunction16() {
 
       } 
 
+      quoteFunction16();
 
     }); // to close response funtion
    
@@ -845,6 +1316,34 @@ $("#peaceful").on("click", giphyFunction16)
 
 //// 17
 
+function quoteFunction17() {
+
+  var queryURL = "http://quotes.rest/qod.json?category=life";
+  console.log(queryURL)
+  
+  $.ajax({
+    url: queryURL,
+    method: "GET"
+  }).then(function (response) {
+    console.log(queryURL);
+    console.log(response.contents.quotes[0].quote);
+
+
+    var quote = response.contents.quotes[0].quote;
+    var author = response.contents.quotes[0].author;
+
+    var results = quote + " - " + author
+   
+      
+      $("#divForGif").prepend(results);
+
+     
+
+
+  }); // to close response funtion
+ 
+
+}// to close quote Function
 
 
 
@@ -887,7 +1386,7 @@ function giphyFunction17() {
         $("#divForGif").prepend(gifDiv);
 
       } 
-
+      quoteFunction17();
 
     }); // to close response funtion
    
@@ -899,6 +1398,34 @@ $("#celebrating").on("click", giphyFunction17)
 
 ///// 18
 
+function quoteFunction18() {
+
+  var queryURL = "http://quotes.rest/qod.json?category=life";
+  console.log(queryURL)
+  
+  $.ajax({
+    url: queryURL,
+    method: "GET"
+  }).then(function (response) {
+    console.log(queryURL);
+    console.log(response.contents.quotes[0].quote);
+
+
+    var quote = response.contents.quotes[0].quote;
+    var author = response.contents.quotes[0].author;
+
+    var results = quote + " - " + author
+   
+      
+      $("#divForGif").prepend(results);
+
+     
+
+
+  }); // to close response funtion
+ 
+
+}// to close quote Function
 
 
 
@@ -941,7 +1468,7 @@ function giphyFunction18() {
         $("#divForGif").prepend(gifDiv);
 
       } 
-
+      quoteFunction18();
 
     }); // to close response funtion
    
