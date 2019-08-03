@@ -6,7 +6,7 @@ document.getElementById("chuckQuote").style.display = "none";
 
 function quoteFunction1() {
 
-  var queryURL = "http://quotes.rest/qod.json?category=inspire&limit=10";
+  var queryURL = "https://quotes.rest/qod.json?category=inspire&limit=10";
   console.log(queryURL)
   
   $.ajax({
@@ -87,7 +87,7 @@ function giphyFunction() {
 
 function quoteFunction2() {
 
-  var queryURL = "http://quotes.rest/qod.json?category=life";
+  var queryURL = "https://quotes.rest/qod.json?category=life";
   console.log(queryURL)
   
   $.ajax({
@@ -173,7 +173,7 @@ function quoteFunction2() {
 
 function quoteFunction3() {
 
-  var queryURL = "http://quotes.rest/qod.json?category=funny";
+  var queryURL = "https://quotes.rest/qod.json?category=funny";
   console.log(queryURL)
   
   $.ajax({
@@ -256,7 +256,7 @@ function quoteFunction3() {
 
   function quoteFunction4() {
 
-    var queryURL = "http://quotes.rest/qod.json?category=art";
+    var queryURL = "https://quotes.rest/qod.json?category=art";
     console.log(queryURL)
     
     $.ajax({
@@ -336,7 +336,7 @@ $("#cool").on("click", giphyFunction4)
 
 function quoteFunction5() {
 
-  var queryURL = "http://quotes.rest/qod.json?category=life";
+  var queryURL = "https://quotes.rest/qod.json?category=life";
   console.log(queryURL)
   
   $.ajax({
@@ -417,7 +417,7 @@ function quoteFunction5() {
 
   function quoteFunction6() {
 
-    var queryURL = "http://quotes.rest/qod.json?category=inspire";
+    var queryURL = "https://quotes.rest/qod.json?category=inspire";
     console.log(queryURL)
     
     $.ajax({
@@ -499,7 +499,7 @@ $("#sad").on("click", giphyFunction6)
 
 function quoteFunction7() {
 
-  var queryURL = "http://quotes.rest/qod.json?category=art";
+  var queryURL = "https://quotes.rest/qod.json?category=art";
   console.log(queryURL)
   
   $.ajax({
@@ -581,7 +581,7 @@ $("#mad").on("click", giphyFunction7)
 
 function quoteFunction8() {
 
-  var queryURL = "http://quotes.rest/qod.json?category=inspire";
+  var queryURL = "https://quotes.rest/qod.json?category=inspire";
   console.log(queryURL)
   
   $.ajax({
@@ -662,7 +662,7 @@ $("#crying").on("click", giphyFunction8)
 
 function quoteFunction9() {
 
-  var queryURL = "http://quotes.rest/qod.json?category=art";
+  var queryURL = "https://quotes.rest/qod.json?category=art";
   console.log(queryURL)
   
   $.ajax({
@@ -744,7 +744,7 @@ $("#sleepy").on("click", giphyFunction9)
 
 function quoteFunction10() {
 
-  var queryURL = "http://quotes.rest/qod.json?category=inspire";
+  var queryURL = "https://quotes.rest/qod.json?category=inspire";
   console.log(queryURL)
   
   $.ajax({
@@ -828,7 +828,7 @@ $("#sick").on("click", giphyFunction10)
 
 function quoteFunction11() {
 
-  var queryURL = "http://quotes.rest/qod.json?category=funny";
+  var queryURL = "https://quotes.rest/qod.json?category=funny";
   console.log(queryURL)
   
   $.ajax({
@@ -913,7 +913,7 @@ $("#fuck").on("click", giphyFunction11)
 
 function quoteFunction12() {
 
-  var queryURL = "http://quotes.rest/qod.json?category=life";
+  var queryURL = "https://quotes.rest/qod.json?category=life";
   console.log(queryURL)
   
   $.ajax({
@@ -999,7 +999,7 @@ $("#swearing").on("click", giphyFunction12)
 
 function quoteFunction13() {
 
-  var queryURL = "http://quotes.rest/qod.json?category=inspire";
+  var queryURL = "https://quotes.rest/qod.json?category=inspire";
   console.log(queryURL)
   
   $.ajax({
@@ -1082,7 +1082,7 @@ $("#mindBlown").on("click", giphyFunction13)
 
 function quoteFunction14() {
 
-  var queryURL = "http://quotes.rest/qod.json?category=funny";
+  var queryURL = "https://quotes.rest/qod.json?category=funny";
   console.log(queryURL)
   
   $.ajax({
@@ -1165,7 +1165,7 @@ $("#poop").on("click", giphyFunction14)
 
 function quoteFunction15() {
 
-  var queryURL = "http://quotes.rest/qod.json?category=life";
+  var queryURL = "https://quotes.rest/qod.json?category=life";
   console.log(queryURL)
   
   $.ajax({
@@ -1248,7 +1248,7 @@ $("#love").on("click", giphyFunction15)
 
 function quoteFunction16() {
 
-  var queryURL = "http://quotes.rest/qod.json?category=inspire";
+  var queryURL = "https://quotes.rest/qod.json?category=inspire";
   console.log(queryURL)
   
   $.ajax({
@@ -1332,7 +1332,7 @@ $("#peaceful").on("click", giphyFunction16)
 
 function quoteFunction17() {
 
-  var queryURL = "http://quotes.rest/qod.json?category=life";
+  var queryURL = "https://quotes.rest/qod.json?category=life";
   console.log(queryURL)
   
   $.ajax({
@@ -1415,7 +1415,7 @@ $("#celebrating").on("click", giphyFunction17)
 
 function quoteFunction18() {
 
-  var queryURL = "http://quotes.rest/qod.json?category=life";
+  var queryURL = "https://quotes.rest/qod.json?category=life";
   console.log(queryURL)
   
   $.ajax({
