@@ -106,3 +106,13 @@ button {
 
 
 }
+#divForQuote {
+    width: 100%;
+}
+#chuck {
+    background-color: aqua;
+    margin-left: 450px;
+}
+#chuckQuote {
+    margin-left: 600px;
+}

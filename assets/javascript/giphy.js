@@ -1,5 +1,8 @@
 /////// 1
 document.getElementById("reset").style.display = "none";
+document.getElementById("chuck").style.display = "none";
+document.getElementById("chuckQuote").style.display = "none";
+
 
 function quoteFunction1() {
 
@@ -27,25 +30,21 @@ function quoteFunction1() {
 
   }); // to close response funtion
  
-
 }// to close quote Function
-
-
-
-
 
 function giphyFunction() {
 
     event.preventDefault(); 
     document.getElementById("reset").style.display = "block";
-    document.getElementById('emojies').style.display = 'none';    
+    document.getElementById('emojies').style.display = 'none';
+    document.getElementById("chuck").style.display = "block";    
       $("#divForGif").empty();
       var giphy = $("#silly").val().trim();
       
       console.log(giphy);
 
       var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-        giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=10"; // limit = 10 to limit the amount of gifs 
+        giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=3"; // limit = 10 to limit the amount of gifs 
       // console.log(queryURL);
       $.ajax({
         url: queryURL,
@@ -122,13 +121,14 @@ function quoteFunction2() {
     event.preventDefault();
     document.getElementById('emojies').style.display = 'none';
     document.getElementById("reset").style.display = "block";      
+    document.getElementById("chuck").style.display = "block";
     $("#divForGif").empty();
       var giphy = $("#happy").val().trim();
       
       console.log(giphy);
 
       var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-        giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=10"; // limit = 10 to limit the amount of gifs 
+        giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=3"; // limit = 10 to limit the amount of gifs 
       // console.log(queryURL);
       $.ajax({
         url: queryURL,
@@ -204,6 +204,7 @@ function quoteFunction3() {
   function giphyFunction3() {
 
     event.preventDefault();
+    document.getElementById("chuck").style.display = "block";
     document.getElementById('emojies').style.display = 'none';
     document.getElementById("reset").style.display = "block";      
     $("#divForGif").empty();
@@ -212,7 +213,7 @@ function quoteFunction3() {
       console.log(giphy);
 
       var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-        giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=10"; // limit = 10 to limit the amount of gifs 
+        giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=3"; // limit = 10 to limit the amount of gifs 
       // console.log(queryURL);
       $.ajax({
         url: queryURL,
@@ -286,6 +287,7 @@ function quoteFunction3() {
 
   event.preventDefault();     
   $("#divForGif").empty();
+  document.getElementById("chuck").style.display = "block";
   document.getElementById('emojies').style.display = 'none';
   document.getElementById("reset").style.display = "block"; 
     var giphy = $("#cool").val().trim();
@@ -293,7 +295,7 @@ function quoteFunction3() {
     console.log(giphy);
 
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=10"; // limit = 10 to limit the amount of gifs 
+      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=3"; // limit = 10 to limit the amount of gifs 
     // console.log(queryURL);
     $.ajax({
       url: queryURL,
@@ -365,6 +367,7 @@ function quoteFunction5() {
  function giphyFunction5() {
 
     event.preventDefault(); 
+    document.getElementById("chuck").style.display = "block";
     document.getElementById("reset").style.display = "block";
     document.getElementById('emojies').style.display = 'none';     
     $("#divForGif").empty();
@@ -373,7 +376,7 @@ function quoteFunction5() {
       console.log(giphy);
 
       var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-        giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=10"; // limit = 10 to limit the amount of gifs 
+        giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=3"; // limit = 10 to limit the amount of gifs 
       // console.log(queryURL);
       $.ajax({
         url: queryURL,
@@ -446,6 +449,7 @@ function quoteFunction5() {
 function giphyFunction6() {
 
   event.preventDefault(); 
+  document.getElementById("chuck").style.display = "block";
   document.getElementById('emojies').style.display = 'none';
   document.getElementById("reset").style.display = "block";     
   $("#divForGif").empty();
@@ -454,7 +458,7 @@ function giphyFunction6() {
     console.log(giphy);
 
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=10"; // limit = 10 to limit the amount of gifs 
+      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=3"; // limit = 10 to limit the amount of gifs 
     // console.log(queryURL);
     $.ajax({
       url: queryURL,
@@ -526,6 +530,7 @@ function quoteFunction7() {
 function giphyFunction7() {
 
   event.preventDefault();
+  document.getElementById("chuck").style.display = "block";
   document.getElementById('emojies').style.display = 'none';
   document.getElementById("reset").style.display = "block";      
   $("#divForGif").empty();
@@ -534,7 +539,7 @@ function giphyFunction7() {
     console.log(giphy);
 
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=10"; // limit = 10 to limit the amount of gifs 
+      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=3"; // limit = 10 to limit the amount of gifs 
     // console.log(queryURL);
     $.ajax({
       url: queryURL,
@@ -607,6 +612,7 @@ function quoteFunction8() {
 function giphyFunction8() {
 
   event.preventDefault(); 
+  document.getElementById("chuck").style.display = "block";
   document.getElementById('emojies').style.display = 'none';
   document.getElementById("reset").style.display = "block";     
   $("#divForGif").empty();
@@ -615,7 +621,7 @@ function giphyFunction8() {
     console.log(giphy);
 
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=10"; // limit = 10 to limit the amount of gifs 
+      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=3"; // limit = 10 to limit the amount of gifs 
     // console.log(queryURL);
     $.ajax({
       url: queryURL,
@@ -688,6 +694,7 @@ function quoteFunction9() {
 function giphyFunction9() {
 
   event.preventDefault(); 
+  document.getElementById("chuck").style.display = "block";
   document.getElementById('emojies').style.display = 'none'; 
   document.getElementById("reset").style.display = "block";    
   $("#divForGif").empty();
@@ -696,7 +703,7 @@ function giphyFunction9() {
     console.log(giphy);
 
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=10"; // limit = 10 to limit the amount of gifs 
+      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=3"; // limit = 10 to limit the amount of gifs 
     // console.log(queryURL);
     $.ajax({
       url: queryURL,
@@ -769,6 +776,7 @@ function quoteFunction10() {
 function giphyFunction10() {
 
   event.preventDefault();
+  document.getElementById("chuck").style.display = "block";
   document.getElementById('emojies').style.display = 'none'; 
    document.getElementById("reset").style.display = "block";
 
@@ -778,7 +786,7 @@ function giphyFunction10() {
     console.log(giphy);
 
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=10"; // limit = 10 to limit the amount of gifs 
+      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=3"; // limit = 10 to limit the amount of gifs 
     // console.log(queryURL);
     $.ajax({
       url: queryURL,
@@ -853,6 +861,7 @@ function quoteFunction11() {
 function giphyFunction11() {
 
   event.preventDefault(); 
+  document.getElementById("chuck").style.display = "block";
   document.getElementById('emojies').style.display = 'none';
   document.getElementById("reset").style.display = "block";     
   $("#divForGif").empty();
@@ -861,7 +870,7 @@ function giphyFunction11() {
     console.log(giphy);
 
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=10"; // limit = 10 to limit the amount of gifs 
+      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=3"; // limit = 10 to limit the amount of gifs 
     // console.log(queryURL);
     $.ajax({
       url: queryURL,
@@ -938,6 +947,7 @@ function quoteFunction12() {
 function giphyFunction12() {
 
   event.preventDefault();
+  document.getElementById("chuck").style.display = "block";
   document.getElementById('emojies').style.display = 'none'; 
   document.getElementById("reset").style.display = "block";     
   $("#divForGif").empty();
@@ -946,7 +956,7 @@ function giphyFunction12() {
     console.log(giphy);
 
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=10"; // limit = 10 to limit the amount of gifs 
+      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=3"; // limit = 10 to limit the amount of gifs 
     // console.log(queryURL);
     $.ajax({
       url: queryURL,
@@ -1022,6 +1032,7 @@ function quoteFunction13() {
 function giphyFunction13() {
 
   event.preventDefault();     
+  document.getElementById("chuck").style.display = "block";
   document.getElementById('emojies').style.display = 'none';
   document.getElementById("reset").style.display = "block"; 
     var giphy = $("#mindBlown").val().trim();
@@ -1029,7 +1040,7 @@ function giphyFunction13() {
     console.log(giphy);
 
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=10"; // limit = 10 to limit the amount of gifs 
+      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=3"; // limit = 10 to limit the amount of gifs 
     // console.log(queryURL);
     $.ajax({
       url: queryURL,
@@ -1102,6 +1113,7 @@ function quoteFunction14() {
 function giphyFunction14() {
 
   event.preventDefault();
+  document.getElementById("chuck").style.display = "block";
   document.getElementById('emojies').style.display = 'none';
   document.getElementById("reset").style.display = "block";      
   $("#divForGif").empty();
@@ -1110,7 +1122,7 @@ function giphyFunction14() {
     console.log(giphy);
 
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=10"; // limit = 10 to limit the amount of gifs 
+      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=3"; // limit = 10 to limit the amount of gifs 
     // console.log(queryURL);
     $.ajax({
       url: queryURL,
@@ -1185,6 +1197,7 @@ function quoteFunction15() {
 function giphyFunction15() {
 
   event.preventDefault(); 
+  document.getElementById("chuck").style.display = "block";
   document.getElementById('emojies').style.display = 'none';
   document.getElementById("reset").style.display = "block";     
   $("#divForGif").empty();
@@ -1193,7 +1206,7 @@ function giphyFunction15() {
     console.log(giphy);
 
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=10"; // limit = 10 to limit the amount of gifs 
+      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=3"; // limit = 10 to limit the amount of gifs 
     // console.log(queryURL);
     $.ajax({
       url: queryURL,
@@ -1267,6 +1280,7 @@ function quoteFunction16() {
 function giphyFunction16() {
 
   event.preventDefault();  
+  document.getElementById("chuck").style.display = "block";
   document.getElementById('emojies').style.display = 'none';
   document.getElementById("reset").style.display = "block";    
   $("#divForGif").empty();
@@ -1275,7 +1289,7 @@ function giphyFunction16() {
     console.log(giphy);
 
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=10"; // limit = 10 to limit the amount of gifs 
+      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=3"; // limit = 10 to limit the amount of gifs 
     // console.log(queryURL);
     $.ajax({
       url: queryURL,
@@ -1350,6 +1364,7 @@ function quoteFunction17() {
 function giphyFunction17() {
 
   event.preventDefault(); 
+  document.getElementById("chuck").style.display = "block";
   document.getElementById('emojies').style.display = 'none';
   document.getElementById("reset").style.display = "block";     
   $("#divForGif").empty();
@@ -1358,7 +1373,7 @@ function giphyFunction17() {
     console.log(giphy);
 
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=10"; // limit = 10 to limit the amount of gifs 
+      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=3"; // limit = 10 to limit the amount of gifs 
     // console.log(queryURL);
     $.ajax({
       url: queryURL,
@@ -1433,6 +1448,7 @@ function giphyFunction18() {
   $("#divForGif").empty();
 
   event.preventDefault();
+  document.getElementById("chuck").style.display = "block";
   document.getElementById('emojies').style.display = 'none'; 
   document.getElementById("reset").style.display = "block";     
     var giphy = $("#volcano").val().trim();
@@ -1440,7 +1456,7 @@ function giphyFunction18() {
     console.log(giphy);
 
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=10"; // limit = 10 to limit the amount of gifs 
+      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=3"; // limit = 10 to limit the amount of gifs 
     // console.log(queryURL);
     $.ajax({
       url: queryURL,
@@ -1492,5 +1508,32 @@ $(document).on("click", ".gif", function() {
 $(document).on("click", "#reset", function() {
   document.getElementById("reset").style.display = "none";
     document.getElementById('emojies').style.display = 'block'; 
+    document.getElementById("chuck").style.display = "none";
+    document.getElementById("chuckQuote").style.display = "none";
     $("#divForGif").empty();
-})
+    $("#chuckQuote").empty();
+});
+
+
+
+
+
+function chuckRules() {
+  // $("#chuckStuff").empty();
+  var queryURL = "https://api.icndb.com/jokes/random/1/?escape=javascript";
+      
+  $.ajax({
+      url: queryURL,
+      method: "GET"
+  }).then(function(response) {
+      // let results = response.data;
+      console.log(response.value[0].joke);
+      document.getElementById("chuckQuote").style.display = "block";
+      $("#chuckQuote").text(response.value[0].joke);
+  });
+}
+
+  $(document).on("click", "#chuck", function() {
+    chuckRules();
+  });
+
