@@ -3,26 +3,39 @@ body {
     margin: 0;
     padding: 0;
 }
-#masthead {
+/* #masthead {
 
-    width: 100%;
-    background: #ffffff;
-    border-bottom: 2px solid #cccccc;
+    
+    /* width: 100%;
+    border-bottom: 2px solid black;
     overflow: auto;
-    margin: 0 0 30px;
+    margin: 0 0 30px; 
+}  */
+
+.jumbotron h1 {
+    font-size:60px;
+    font-weight:bold;
+   
+   
+}
+body{
+    font-family: "assets/fonts (1)/Titillium_Web;";
+
 }
 
-body {
-    background-image: url("assets/css/assets/images/wallpaper.jpg");
-    background-position: relative; 
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-h1, .head {
+/* h1, .head {
+    font-size: larger;
     text-align: center;
     padding:5px;
     margin:10px;
+    
+} */
+.jumbotron{
+    background-image: url("../images/crayonDrip.jpg");
+    text-align: center;
+    color:orange;
+    
+    
 
 }
 
@@ -32,7 +45,9 @@ h1, .head {
 
 .slider {
     width: 75%;
-    margin: 200px auto;
+    margin: auto;
+    padding:0;
+
 }
 
 .slick-slide {
@@ -79,7 +94,7 @@ button {
 }
 #reset {
     font-size: 50px;
-    background-color: green;
+    background-color: rgb(0, 128, 36);
     position: absolute;
 
 
