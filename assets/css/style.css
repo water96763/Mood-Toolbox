@@ -91,10 +91,12 @@ button {
 .gif {
     border-width: thick;
     margin: 20px;
+    /* float: right; */
 }
 
 .container > div {
     display: inline-block;
+    
 }
 #buttonDiv {
     text-align: center;
@@ -108,6 +110,10 @@ button {
 }
 #divForQuote {
     width: 100%;
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+    
 }
 #chuck {
     background-color: aqua;
@@ -116,3 +122,5 @@ button {
 #chuckQuote {
     margin-left: 600px;
 }
+
+
