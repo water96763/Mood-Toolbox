@@ -4,9 +4,10 @@ document.getElementById("chuck").style.display = "none";
 document.getElementById("chuckQuote").style.display = "none";
 
 
+
 function quoteFunction1() {
 
-  var queryURL = "https://quotes.rest/qod.json?category=inspire&limit=10";
+  var queryURL = "https://quotes.rest/qod.json?category=art";
   console.log(queryURL)
   
   $.ajax({
@@ -23,7 +24,7 @@ function quoteFunction1() {
     var results = quote + " - " + author
    
       
-      $("#divForGif").prepend(results);
+      $("#divForQuote").prepend(results);
 
      
 
@@ -87,7 +88,7 @@ function giphyFunction() {
 
 function quoteFunction2() {
 
-  var queryURL = "https://quotes.rest/qod.json?category=life";
+  var queryURL = "https://quotes.rest/qod.json?category=inspire";
   console.log(queryURL)
   
   $.ajax({
@@ -104,7 +105,7 @@ function quoteFunction2() {
     var results = quote + " - " + author
    
       
-      $("#divForGif").prepend(results);
+      $("#divForQuote").prepend(results);
 
      
 
@@ -190,7 +191,7 @@ function quoteFunction3() {
     var results = quote + " - " + author
    
       
-      $("#divForGif").prepend(results);
+      $("#divForQuote").prepend(results);
 
      
 
@@ -256,7 +257,7 @@ function quoteFunction3() {
 
   function quoteFunction4() {
 
-    var queryURL = "https://quotes.rest/qod.json?category=art";
+    var queryURL = "https://quotes.rest/qod.json?category=management";
     console.log(queryURL)
     
     $.ajax({
@@ -273,7 +274,7 @@ function quoteFunction3() {
       var results = quote + " - " + author
      
         
-        $("#divForGif").prepend(results);
+        $("#divForQuote").prepend(results);
   
        
   
@@ -353,7 +354,7 @@ function quoteFunction5() {
     var results = quote + " - " + author
    
       
-      $("#divForGif").prepend(results);
+      $("#divForQuote").prepend(results);
 
      
 
@@ -434,7 +435,7 @@ function quoteFunction5() {
       var results = quote + " - " + author
      
         
-        $("#divForGif").prepend(results);
+        $("#divForQuote").prepend(results);
   
        
   
@@ -499,7 +500,7 @@ $("#sad").on("click", giphyFunction6)
 
 function quoteFunction7() {
 
-  var queryURL = "https://quotes.rest/qod.json?category=art";
+  var queryURL = "https://quotes.rest/qod.json?category=life";
   console.log(queryURL)
   
   $.ajax({
@@ -516,7 +517,7 @@ function quoteFunction7() {
     var results = quote + " - " + author
    
       
-      $("#divForGif").prepend(results);
+      $("#divForQuote").prepend(results);
 
      
 
@@ -598,7 +599,7 @@ function quoteFunction8() {
     var results = quote + " - " + author
    
       
-      $("#divForGif").prepend(results);
+      $("#divForQuote").prepend(results);
 
      
 
@@ -679,7 +680,7 @@ function quoteFunction9() {
     var results = quote + " - " + author
    
       
-      $("#divForGif").prepend(results);
+      $("#divForQuote").prepend(results);
 
      
 
@@ -744,7 +745,7 @@ $("#sleepy").on("click", giphyFunction9)
 
 function quoteFunction10() {
 
-  var queryURL = "https://quotes.rest/qod.json?category=inspire";
+  var queryURL = "https://quotes.rest/qod.json?category=management";
   console.log(queryURL)
   
   $.ajax({
@@ -761,7 +762,7 @@ function quoteFunction10() {
     var results = quote + " - " + author
    
       
-      $("#divForGif").prepend(results);
+      $("#divForQuote").prepend(results);
 
      
 
@@ -828,7 +829,7 @@ $("#sick").on("click", giphyFunction10)
 
 function quoteFunction11() {
 
-  var queryURL = "https://quotes.rest/qod.json?category=funny";
+  var queryURL = "https://quotes.rest/qod.json?category=life";
   console.log(queryURL)
   
   $.ajax({
@@ -845,7 +846,7 @@ function quoteFunction11() {
     var results = quote + " - " + author
    
       
-      $("#divForGif").prepend(results);
+      $("#divForQuote").prepend(results);
 
      
 
@@ -913,7 +914,7 @@ $("#fuck").on("click", giphyFunction11)
 
 function quoteFunction12() {
 
-  var queryURL = "https://quotes.rest/qod.json?category=life";
+  var queryURL = "https://quotes.rest/qod.json?category=management";
   console.log(queryURL)
   
   $.ajax({
@@ -930,7 +931,7 @@ function quoteFunction12() {
     var results = quote + " - " + author
    
       
-      $("#divForGif").prepend(results);
+      $("#divForQuote").prepend(results);
 
      
 
@@ -1016,7 +1017,7 @@ function quoteFunction13() {
     var results = quote + " - " + author
    
       
-      $("#divForGif").prepend(results);
+      $("#divForQuote").prepend(results);
 
      
 
@@ -1099,7 +1100,7 @@ function quoteFunction14() {
     var results = quote + " - " + author
    
       
-      $("#divForGif").prepend(results);
+      $("#divForQuote").prepend(results);
 
      
 
@@ -1165,7 +1166,7 @@ $("#poop").on("click", giphyFunction14)
 
 function quoteFunction15() {
 
-  var queryURL = "https://quotes.rest/qod.json?category=life";
+  var queryURL = "https://quotes.rest/qod.json?category=art";
   console.log(queryURL)
   
   $.ajax({
@@ -1182,7 +1183,7 @@ function quoteFunction15() {
     var results = quote + " - " + author
    
       
-      $("#divForGif").prepend(results);
+      $("#divForQuote").prepend(results);
 
      
 
@@ -1265,7 +1266,7 @@ function quoteFunction16() {
     var results = quote + " - " + author
    
       
-      $("#divForGif").prepend(results);
+      $("#divForQuote").prepend(results);
 
      
 
@@ -1332,7 +1333,7 @@ $("#peaceful").on("click", giphyFunction16)
 
 function quoteFunction17() {
 
-  var queryURL = "https://quotes.rest/qod.json?category=life";
+  var queryURL = "https://quotes.rest/qod.json?category=funny";
   console.log(queryURL)
   
   $.ajax({
@@ -1349,7 +1350,7 @@ function quoteFunction17() {
     var results = quote + " - " + author
    
       
-      $("#divForGif").prepend(results);
+      $("#divForQuote").prepend(results);
 
      
 
@@ -1415,7 +1416,7 @@ $("#celebrating").on("click", giphyFunction17)
 
 function quoteFunction18() {
 
-  var queryURL = "https://quotes.rest/qod.json?category=life";
+  var queryURL = "https://quotes.rest/qod.json?category=art";
   console.log(queryURL)
   
   $.ajax({
@@ -1432,7 +1433,7 @@ function quoteFunction18() {
     var results = quote + " - " + author
    
       
-      $("#divForGif").prepend(results);
+      $("#divForQuote").prepend(results);
 
      
 
@@ -1510,6 +1511,7 @@ $(document).on("click", "#reset", function() {
     document.getElementById('emojies').style.display = 'block'; 
     document.getElementById("chuck").style.display = "none";
     document.getElementById("chuckQuote").style.display = "none";
+    document.getElementById("divForQuote").style.display = "none";
     $("#divForGif").empty();
     $("#chuckQuote").empty();
 });
