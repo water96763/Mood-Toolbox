@@ -45,7 +45,7 @@ function giphyFunction() {
       console.log(giphy);
 
       var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-        giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=3"; // limit = 10 to limit the amount of gifs 
+        giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=4"; // limit = 10 to limit the amount of gifs 
       // console.log(queryURL);
       $.ajax({
         url: queryURL,
@@ -129,7 +129,7 @@ function quoteFunction2() {
       console.log(giphy);
 
       var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-        giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=3"; // limit = 10 to limit the amount of gifs 
+        giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=4"; // limit = 10 to limit the amount of gifs 
       // console.log(queryURL);
       $.ajax({
         url: queryURL,
@@ -170,7 +170,7 @@ function quoteFunction2() {
   
     $("#happy").on("click", giphyFunction2) 
 
-//////3
+//////4
 
 function quoteFunction3() {
 
@@ -214,7 +214,7 @@ function quoteFunction3() {
       console.log(giphy);
 
       var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-        giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=3"; // limit = 10 to limit the amount of gifs 
+        giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=4"; // limit = 10 to limit the amount of gifs 
       // console.log(queryURL);
       $.ajax({
         url: queryURL,
@@ -296,7 +296,7 @@ function quoteFunction3() {
     console.log(giphy);
 
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=3"; // limit = 10 to limit the amount of gifs 
+      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=4"; // limit = 10 to limit the amount of gifs 
     // console.log(queryURL);
     $.ajax({
       url: queryURL,
@@ -377,7 +377,7 @@ function quoteFunction5() {
       console.log(giphy);
 
       var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-        giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=3"; // limit = 10 to limit the amount of gifs 
+        giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=4"; // limit = 10 to limit the amount of gifs 
       // console.log(queryURL);
       $.ajax({
         url: queryURL,
@@ -459,7 +459,7 @@ function giphyFunction6() {
     console.log(giphy);
 
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=3"; // limit = 10 to limit the amount of gifs 
+      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=4"; // limit = 10 to limit the amount of gifs 
     // console.log(queryURL);
     $.ajax({
       url: queryURL,
@@ -540,7 +540,7 @@ function giphyFunction7() {
     console.log(giphy);
 
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=3"; // limit = 10 to limit the amount of gifs 
+      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=4"; // limit = 10 to limit the amount of gifs 
     // console.log(queryURL);
     $.ajax({
       url: queryURL,
@@ -866,7 +866,7 @@ function giphyFunction11() {
   document.getElementById('emojies').style.display = 'none';
   document.getElementById("reset").style.display = "block";     
   $("#divForGif").empty();
-    var giphy = $("#fuck").val().trim();
+    var giphy = $("#up_yours").val().trim();
     
     console.log(giphy);
 
@@ -907,7 +907,7 @@ function giphyFunction11() {
   
 } // to close button function
 
-$("#fuck").on("click", giphyFunction11)
+$("#up_yours").on("click", giphyFunction11)
 
 
 /// 12
@@ -952,7 +952,7 @@ function giphyFunction12() {
   document.getElementById('emojies').style.display = 'none'; 
   document.getElementById("reset").style.display = "block";     
   $("#divForGif").empty();
-    var giphy = $("#swearing").val().trim();
+    var giphy = $("#outburst_of_anger").val().trim();
     
     console.log(giphy);
 
@@ -993,7 +993,7 @@ function giphyFunction12() {
   
 } // to close button function
 
-$("#swearing").on("click", giphyFunction12)
+$("#outburst_of_anger").on("click", giphyFunction12)
 
 
 //// 13 
@@ -1118,12 +1118,12 @@ function giphyFunction14() {
   document.getElementById('emojies').style.display = 'none';
   document.getElementById("reset").style.display = "block";      
   $("#divForGif").empty();
-    var giphy = $("#poop").val().trim();
+    var giphy = $("#that_poop").val().trim();
     
     console.log(giphy);
 
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=3"; // limit = 10 to limit the amount of gifs 
+      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=4"; // limit = 10 to limit the amount of gifs 
     // console.log(queryURL);
     $.ajax({
       url: queryURL,
@@ -1159,7 +1159,7 @@ function giphyFunction14() {
   
 } // to close button function
 
-$("#poop").on("click", giphyFunction14)
+$("#that_poop").on("click", giphyFunction14)
 
 
 /// 15 
@@ -1285,7 +1285,7 @@ function giphyFunction16() {
   document.getElementById('emojies').style.display = 'none';
   document.getElementById("reset").style.display = "block";    
   $("#divForGif").empty();
-    var giphy = $("#peaceful").val().trim();
+    var giphy = $("#contented").val().trim();
     
     console.log(giphy);
 
@@ -1326,7 +1326,7 @@ function giphyFunction16() {
   
 } // to close button function
 
-$("#peaceful").on("click", giphyFunction16)
+$("#contented").on("click", giphyFunction16)
 
 
 //// 17
@@ -1452,12 +1452,12 @@ function giphyFunction18() {
   document.getElementById("chuck").style.display = "block";
   document.getElementById('emojies').style.display = 'none'; 
   document.getElementById("reset").style.display = "block";     
-    var giphy = $("#volcano").val().trim();
+    var giphy = $("#bad_cat").val().trim();
     
     console.log(giphy);
 
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=3"; // limit = 10 to limit the amount of gifs 
+      giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=4"; // limit = 10 to limit the amount of gifs 
     // console.log(queryURL);
     $.ajax({
       url: queryURL,
@@ -1492,7 +1492,7 @@ function giphyFunction18() {
   
 } // to close button function
 
-$("#volcano").on("click", giphyFunction18)
+$("#bad_cat").on("click", giphyFunction18)
 
 
 $(document).on("click", ".gif", function() {

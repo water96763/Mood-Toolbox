@@ -1,11 +1,11 @@
-html,
+
 body {
     margin: 0;
     padding: 0;
+    background:black;
+    color:white;
 }
 /* #masthead {
-
-    
     /* width: 100%;
     border-bottom: 2px solid black;
     overflow: auto;
@@ -23,14 +23,10 @@ body {
     font-size:50px;
     font-weight:bold;
     -webkit-text-stroke: 2px black;
-
-
-
+    position: relative;
 }
 body{
     font-family: "assets/fonts (1)/Titillium_Web;";
-
-
 }
 
 /* h1, .head {
@@ -44,6 +40,7 @@ body{
     background-image: url("../images/crayonDrip.jpg");
     text-align: center;
     padding: 0%;
+    margin-bottom: 0%;
 }
 
 * {
@@ -54,7 +51,6 @@ body{
     width: 75%;
     margin: auto;
     padding:0;
-
 }
 
 .slick-slide {
@@ -67,7 +63,7 @@ body{
 
 .slick-prev:before,
 .slick-next:before {
-    color: black;
+    color: white;
 }
 
 .slick-slide {
@@ -87,40 +83,41 @@ button {
     background-color:transparent;
     border: transparent;
 }
-
-.gif {
-    border-width: thick;
-    margin: 20px;
-    /* float: right; */
-}
-
-.container > div {
-    display: inline-block;
-    
-}
-#buttonDiv {
-    text-align: center;
-}
-#reset {
-    font-size: 50px;
-    background-color: rgb(0, 128, 36);
-    position: absolute;
-
-
-}
 #divForQuote {
     width: 100%;
     text-align: center;
     font-family: 'EB Garamond', serif;
-    font-size: 20px;
+    font-size: 25px; 
+}
+.gif {
+    border-width: thick;
+    margin: 10px;
+    /* float: right; */
+}
+
+.container > div {
+    display: inline-block;  
+    margin-bottom: 0%;
+}
+#buttonDiv {
+    text-align: center;
+    display: inline;
+}
+#reset {
+    font-size: 25px;
+    background-color: rgb(112, 176, 30);
+    float:right;
     
 }
+
 #chuck {
+    font-size: 25px;
     background-color: aqua;
-    margin-left: 450px;
+    margin-left:400px;
 }
 #chuckQuote {
     margin-left: 600px;
+    font-size: 25px;
 }
 
 
