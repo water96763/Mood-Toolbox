@@ -119,6 +119,12 @@ button {
 #chuckQuote {
     margin-left: 600px;
     font-size: 25px;
-}
+} 
 
+#chuckPic {
+    height: auto;
+    /* align-self: auto; */
+    margin-right: 600px;
+}
+  
 
