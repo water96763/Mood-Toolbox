@@ -3,63 +3,38 @@ document.getElementById("reset").style.display = "none";
 document.getElementById("chuck").style.display = "none";
 document.getElementById("chuckQuote").style.display = "none";
 
-
-
 function quoteFunction1() {
+    var queryURL = "https://quotes.rest/qod.json?category=art";
 
-  var queryURL = "https://quotes.rest/qod.json?category=art";
-  console.log(queryURL)
-  
-  $.ajax({
-    url: queryURL,
-    method: "GET"
-  }).then(function (response) {
-    console.log(queryURL);
-    console.log(response.contents.quotes[0].quote);
-
-
-    var quote = response.contents.quotes[0].quote;
-    var author = response.contents.quotes[0].author;
-
-    var results = quote + " - " + author
-   
-      
+    $.ajax({
+      url: queryURL,
+      method: "GET"
+    }).then(function (response) {
+      var quote = response.contents.quotes[0].quote;
+      var author = response.contents.quotes[0].author;
+      var results = quote + " - " + author
       $("#divForQuote").prepend(results);
-
-     
-
-
-  }); // to close response funtion
- 
+    }); // to close response funtion
 }// to close quote Function
 
 function giphyFunction() {
-
     event.preventDefault(); 
     document.getElementById("reset").style.display = "block";
     document.getElementById('emojies').style.display = 'none';
     document.getElementById("chuck").style.display = "block";    
-      $("#divForGif").empty();
-      var giphy = $("#silly").val().trim();
-      
-      console.log(giphy);
-
-      var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-        giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=4"; // limit = 10 to limit the amount of gifs 
-      // console.log(queryURL);
+    $("#divForGif").empty();
+    var giphy = $("#silly").val().trim();
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
+        giphy + "&api_key=oGtMo5Kd45OXskKdOuMmP0GolQoPOa9Z&limit=4"; // limit =to limit the amount of gifs 
       $.ajax({
         url: queryURL,
         method: "GET"
       }).then(function (response) {
-        console.log(queryURL);
-        console.log(response);
-
-
         var results = response.data;
         for (var i = 0; i < results.length; i++) {
           var gifDiv = $("<div>");
-          
           var gifImage = $("<img>");
+          
           gifImage.attr({
             "src": results[i].images.fixed_height.url,
             "data-animate": results[i].images.fixed_height.url,
@@ -68,10 +43,7 @@ function giphyFunction() {
             "class": "gif"
           });
 
-        
-
-          // gifDiv.append();
-          gifDiv.append(gifImage);
+        gifDiv.append(gifImage);
           $("#divForGif").prepend(gifDiv);
 
         } // to close the loop 
@@ -1463,9 +1435,6 @@ function giphyFunction18() {
       url: queryURL,
       method: "GET"
     }).then(function (response) {
-      console.log(queryURL);
-      console.log(response);
-
 
       var results = response.data;
       for (var i = 0; i < results.length; i++) {
@@ -1507,22 +1476,18 @@ $(document).on("click", ".gif", function() {
 }); 
 
 $(document).on("click", "#reset", function() {
-  document.getElementById("reset").style.display = "none";
+    document.getElementById("reset").style.display = "none";
     document.getElementById('emojies').style.display = 'block'; 
     document.getElementById("chuck").style.display = "none";
     document.getElementById("chuckQuote").style.display = "none";
-    document.getElementById("divForQuote").style.display = "empty";
+    // document.getElementById("divForQuote").style.display = "empty";
     $("#divForGif").empty();
-    $("#chuckQuote").empty();
     $("#divForQuote").empty();
+    $("#chuckQuote").empty();
+    $("#chuckPic").empty();
 });
 
-
-
-
-
 function chuckRules() {
-  // $("#chuckStuff").empty();
   var queryURL = "https://api.icndb.com/jokes/random/1/?escape=javascript";
       
   $.ajax({
@@ -1534,9 +1499,33 @@ function chuckRules() {
       document.getElementById("chuckQuote").style.display = "block";
       $("#chuckQuote").text(response.value[0].joke);
   });
+
+}
+ 
+function chuckGif() {
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=chucknorris&api_key=hDcyYQDAb4wguGxBI8nGwH1wyhq0SA1g&limit=1";  
+    
+    $.ajax({
+      url: queryURL,
+      method: "GET"
+    }).then(function (response) {
+        let result = response.data;
+        console.log(result);
+      
+        let chuckImage =$("<img>");
+        chuckImage.attr({
+          "src": result[0].images.fixed_height.url,
+          "data-animate": result[0].images.fixed_height.url,
+          "data-still": result[0].images.fixed_height_still.url,
+          "data-state": "animate",
+          "class": "gif"
+        });
+          $("#chuckPic").prepend(chuckImage);
+    });
 }
 
   $(document).on("click", "#chuck", function() {
     chuckRules();
+    chuckGif();
   });
 
