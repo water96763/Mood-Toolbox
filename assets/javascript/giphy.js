@@ -1511,9 +1511,10 @@ $(document).on("click", "#reset", function() {
     document.getElementById('emojies').style.display = 'block'; 
     document.getElementById("chuck").style.display = "none";
     document.getElementById("chuckQuote").style.display = "none";
-    document.getElementById("divForQuote").style.display = "none";
+    document.getElementById("divForQuote").style.display = "empty";
     $("#divForGif").empty();
     $("#chuckQuote").empty();
+    $("#divForQuote").empty();
 });
 
 
