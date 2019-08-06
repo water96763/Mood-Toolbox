@@ -983,27 +983,45 @@ function chuckRules() {
 }
  
 //////chuck gifs//////
-function chuckGif() {
+// function chuckGif() {
 
-    var queryURL = "https://api.giphy.com/v1/gifs/search?q=chucknorris&api_key=hDcyYQDAb4wguGxBI8nGwH1wyhq0SA1g&limit=1";  
+//     var queryURL = "https://api.giphy.com/v1/gifs/search?q=chucknorris&api_key=hDcyYQDAb4wguGxBI8nGwH1wyhq0SA1g&limit=1";  
     
-    $.ajax({
-      url: queryURL,
-      method: "GET"
-    }).then(function (response) {
-        let result = response.data;
-        let chuckImage =$("<img>");
-        chuckImage.attr({
-          "src": result[0].images.fixed_height.url,
-          "data-animate": result[0].images.fixed_height.url,
-          "data-still": result[0].images.fixed_height_still.url,
-          "data-state": "animate",
-          "class": "gif"
-        });
-        $("#chuckPic").prepend(chuckImage);
-    });
+//     $.ajax({
+//       url: queryURL,
+//       method: "GET"
+//     }).then(function (response) {
+//         let result = response.data;
+//         let chuckImage =$("<img>");
+//         chuckImage.attr({
+//           "src": result[0].images.fixed_height.url,
+//           "data-animate": result[0].images.fixed_height.url,
+//           "data-still": result[0].images.fixed_height_still.url,
+//           "data-state": "animate",
+//           "class": "gif"
+//         });
+//         $("#chuckPic").prepend(chuckImage);
+//     });
+// }
+function chuckGif() {
+  // var queryURL = "https://api.giphy.com/v1/gifs/search?q=chuck-norris&api_key=hDcyYQDAb4wguGxBI8nGwH1wyhq0SA1g&limit=1";
+    var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=hDcyYQDAb4wguGxBI8nGwH1wyhq0SA1g&tag=chucknorris";
+  $.ajax({
+    url: queryURL,
+    method: "GET"
+  }).then(function (response) {
+      let result = response.data;
+      let chuckImage =$("<img>");
+      chuckImage.attr({
+        "src": result.images.fixed_height.url,
+        "data-animate": result.images.fixed_height.url,
+        "data-still": result.images.fixed_height_still.url,
+        "data-state": "animate",
+        "class": "gif"
+      });
+      $("#chuckPic").prepend(chuckImage);
+  });
 }
-
 ////extra kick button/////
   $(document).on("click", "#chuck", function() {
     chuckRules();
