@@ -48,6 +48,7 @@ body{
     box-sizing: border-box;
 }
 
+
 .slider {
     width: 75%;
     margin: auto;
@@ -120,7 +121,7 @@ button {
 #chuckPic {
     height: auto;
     /* align-self: auto; */
-    margin-right: 600px;
+    /* margin-right: 600px; */
 }
 @media screen and (max-width: 768px){
     .wrapper {
