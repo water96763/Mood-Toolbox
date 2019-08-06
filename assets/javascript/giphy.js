@@ -1010,5 +1010,3 @@ function chuckGif() {
     chuckGif();
   });
 
- 
-  
