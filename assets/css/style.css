@@ -108,17 +108,120 @@ button {
     font-size: 25px;
     background-color: rgb(112, 176, 30);
     float:right;
-    
 }
-
 #chuck {
     font-size: 25px;
     background-color: aqua;
-    margin-left:400px;
 }
 #chuckQuote {
-    margin-left: 600px;
+    text-align: center;
     font-size: 25px;
 }
+#chuckPic {
+    height: auto;
+    /* align-self: auto; */
+    margin-right: 600px;
+}
 
+@media screen and (max-width: 768px){
+    .wrapper {
+       width: 100%;
+         }
+   .slider {
+       width: 91%;
+       }
+   .jumbotron h1 {
+       font-size:60px;
+       }
+   .jumbotron p {
+       color:white;
+       font-size:40px;
+       }
+   #divForQuote {
+       font-size: 20px; 
+       }
+   #chuckQuote {
+       text-align: center;
+       font-size: 20px;
+       margin-right:50px;       
+       }
+   #chuck {
+       float:left;
+       }
+   .gif {
+       max-width:200px;
+       }
+   }
+   @media screen and (max-width: 320px){
+    .wrapper {
+       width: 100%;
+         }
+   .slider {
+       width: 91%;
+       }
+   .jumbotron h1 {
+       font-size:60px;
+       }
+   .jumbotron p {
+       color:white;
+       font-size:40px;
+       }
+    .gif {
+       max-width:100px;
+       }
+   #divForQuote {
+       font-size: 20px; 
+       }
+   #chuckQuote {
+       text-align: center;
+       font-size: 20px;
+       margin-right:50px;       
+       }
+   #chuck {
+       float:left;
+       }
+   
+   }
+/* Width at 168px and below */
+@media screen and (max-width: 168px) and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: portrait) {  
+    
+    .wrapper {
+        max-width: 168px;
+    }
+    .container{
+        margin:auto;
+        padding:auto;
+        max-width: 168px;
+    }
+    .slider {
+        width: 91%;
+           }
+    .jumbotron h1 {
+        font-size:40px;
+           }
+    .jumbotron p {
+        color:white;
+        font-size:20px;
+           }
+    #divForQuote {
+        font-size: 15px; 
+           }
+    .gif {
+        max-width:100px;
+           }
+    #chuckQuote {
+        text-align: center;
+        font-size: 15px;
+        margin-right:50px;       
+           }
+    #chuck {
+        float:left;
+           }
+    #reset{
+        position:relative;
+    }
 
+       
+    
+}
