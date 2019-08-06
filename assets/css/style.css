@@ -122,7 +122,6 @@ button {
     /* align-self: auto; */
     margin-right: 600px;
 }
-
 @media screen and (max-width: 768px){
     .wrapper {
        width: 100%;
@@ -225,3 +224,4 @@ and (orientation: portrait) {
        
     
 }
+
